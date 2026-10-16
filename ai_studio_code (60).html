@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <title>youbin - Download</title>
+
+  <!-- Favicon บน Tab URL -->
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/DwWnNqHC/0004-10.png">
+  <link rel="apple-touch-icon" href="https://i.postimg.cc/DwWnNqHC/0004-10.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ล็อกหน้าจอให้พอดี ไม่ให้มี Scrollbar และเลื่อนไม่ได้เด็ดขาด */
+    html, body {
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      touch-action: none; /* ป้องกันการรูดจอบนมือถือ */
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #111111;
+      font-family: Tahoma, "MS Sans Serif", Arial, sans-serif;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* ไอคอนแอป */
+    .app-icon {
+      width: 68px;
+      height: 68px;
+      border: 1px solid #4a94ad;
+      padding: 2px;
+      background: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    /* ชื่อแอป */
+    .app-title {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 22px;
+      font-weight: bold;
+      color: #0d3342;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    /* ปุ่มดาวน์โหลด โทนฟ้า #5EB7D9 */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #5EB7D9;
+      background: linear-gradient(to bottom, #d6eff8 0%, #90d1e8 45%, #5EB7D9 100%);
+      border: 1px solid #4392ad;
+      color: #0b2e3d;
+      padding: 0 16px;
+      font-family: Tahoma, "MS Sans Serif", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 1px;
+      width: 100%;
+      max-width: 220px;
+      height: 38px;
+      user-select: none;
+      margin-bottom: 20px;
+    }
+
+    .download-btn:active {
+      background: #89cce3;
+      border-color: #1a4f63;
+    }
+
+    .icon {
+      width: 15px;
+      height: 15px;
+      fill: #0b2e3d;
+      flex-shrink: 0;
+    }
+
+    /* คำอธิบาย */
+    .description {
+      width: 100%;
+      border-top: 1px solid #d8e7ed;
+      padding-top: 14px;
+      text-align: left;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #333333;
+    }
+
+    .description p {
+      margin-bottom: 8px;
+    }
+
+    .feature-list {
+      list-style-type: square;
+      padding-left: 18px;
+    }
+
+    .feature-list li {
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- App Icon -->
+    <img src="https://i.postimg.cc/DwWnNqHC/0004-10.png" alt="youbin" class="app-icon">
+
+    <!-- App Name -->
+    <h1 class="app-title">youbin</h1>
+
+    <!-- Download Link -->
+    <a href="https://github.com/punok-dev/youbin.project/raw/refs/heads/main/youbin.apk" class="download-btn">
+      <svg class="icon" viewBox="0 0 24 24">
+        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+      </svg>
+      Download APK
+    </a>
+
+    <!-- Description -->
+    <div class="description">
+      <p>A fast, lightweight, and minimal raw paste tool.</p>
+      <ul class="feature-list">
+        <li>Write, edit, or drag & drop files</li>
+        <li>Automatic syntax highlighting for any language</li>
+        <li>Instant raw text publishing via Bytebin</li>
+        <li>No ads, tracking, or unnecessary bloat</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
